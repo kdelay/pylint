@@ -1,0 +1,5 @@
+Fix a false positive for ``possibly-used-before-assignment`` and a false negative
+for ``unreachable`` when a never-returning function is annotated with a qualified
+name (``-> typing.NoReturn`` or ``-> typing.Never``) instead of a bare one.
+
+Closes #11271
